@@ -1,6 +1,7 @@
 {
   "mappings": [
     "/content/l423-ta-repo/:/",
+    "/content/l423-ta-repo/featured-authors:/featured-authors.json",
     "/content/l423-ta-repo.resource/authors.json:/authors.json"
   ]
 }
