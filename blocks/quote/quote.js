@@ -1,18 +1,18 @@
-import { moveInstrumentation } from "../../scripts/scripts.js";
+import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   const [quoteWrapper] = block.children;
 
   // get the paragraph and its parent
 
-  const par = quoteWrapper.querySelector("p");
+  const par = quoteWrapper.querySelector('p');
 
   if (par) {
     const parWrapper = par.parentElement;
 
     // create a new <blockquote> we will wrap it in
 
-    const blockquote = document.createElement("blockquote");
+    const blockquote = document.createElement('blockquote');
 
     // move the instrumentation from the paragraph wrapper to the <blockquote> (if any)
 
