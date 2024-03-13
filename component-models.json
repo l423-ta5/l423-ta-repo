@@ -204,5 +204,17 @@
         "value":"" 
       } 
     ] 
-  } 
+  },
+  {
+    "id": "listing",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "index",
+        "label": "Index",
+        "value": ""
+      }
+    ]
+  }   
 ]
