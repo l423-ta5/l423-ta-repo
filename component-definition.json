@@ -135,7 +135,24 @@
               }
             }
           }
-        }
+        },
+        { 
+          "title":"Quote", 
+          "id":"quote", 
+          "plugins": { 
+            "xwalk": { 
+              "page": { 
+                "resourceType":"core/franklin/components/block/v1/block", 
+                "template": { 
+                  "name":"Quote", 
+                  "model":"quote", 
+                  "quote":"<p>We cannot solve our problems with the same thinking we used to create them.</p>", 
+                  "author":"Albert Einstein" 
+                } 
+              } 
+            } 
+          } 
+        } 
       ]
     }
   ]
