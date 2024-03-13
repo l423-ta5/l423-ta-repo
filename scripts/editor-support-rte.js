@@ -40,14 +40,14 @@ export function decorateRichtext(container = document) {
       if (editable) {
         orphanElements = editable.querySelectorAll(`[data-richtext-prop="${richtextProp}"]`);
       } else {
-        console.warn(`Editable parent not found or richtext property ${richtextProp}`);
+        // console.warn(`Editable parent not found or richtext property ${richtextProp}`);
         return;
       }
     }
 
     if (orphanElements.length) {
-      console.warn('Found orphan elements of a richtext, that were not consecutive siblings of '
-        + 'the first paragraph', orphanElements);
+      /*console.warn('Found orphan elements of a richtext, that were not consecutive siblings of '
+        + 'the first paragraph', orphanElements);*/
       orphanElements.forEach((orphanElement) => deleteInstrumentation(orphanElement));
     } else {
       const group = document.createElement('div');
